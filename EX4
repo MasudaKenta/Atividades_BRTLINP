@@ -13,7 +13,6 @@ int main(){
     char c8 = c+8;
     char c9 = c+9;
     char c10 = c+10;
-    
 
     printf("%c\n", c1);
     printf("%c\n", c2);
