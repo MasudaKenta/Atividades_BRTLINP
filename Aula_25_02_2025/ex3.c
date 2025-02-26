@@ -13,15 +13,15 @@ int main() {
         printf("B\n");
         return 0;
     }
-    if(nota>=8){
+    if(nota>=7){
         printf("C\n");
         return 0;
     }
-    if(nota>=8){
+    if(nota>=6){
         printf("D\n");
         return 0;
     }
-    if(nota>=8){
+    if(nota>=0){
         printf("F\n");
         return 0;
     }
