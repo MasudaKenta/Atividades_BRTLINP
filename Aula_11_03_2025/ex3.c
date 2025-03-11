@@ -11,7 +11,7 @@ int main() {
     
     imc = peso/(altura*altura);
     
-    printf("Seu imc: %.1f\nDiagnostico: ", imc);
+    printf("\nSeu imc: %.1f\nDiagnostico: ", imc);
      
     if(imc > 40){
     	printf("obesidade classe III\n");
