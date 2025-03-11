@@ -3,7 +3,7 @@
 int main() {
     float nota;
     
-    printf("Digite a nota do aluno: ");
+    printf("Digite a nota do aluno [0-10]: ");
     scanf("%f", &nota);
     
     if(nota >= 9){
