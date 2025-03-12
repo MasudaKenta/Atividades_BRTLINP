@@ -7,10 +7,7 @@ int main() {
     scanf("%f", &nota);
     
     if(nota >= 9.0){
-    	if(nota <= 10.0)
-    		printf("Conceito: A");
-    	else
-    		printf("Nota fora do padrao");
+    	printf("Conceito: A");
 	}
 	else{
 		if(nota>=8.0){
@@ -25,12 +22,7 @@ int main() {
 					printf("Conceito: D");
 				}
 				else{
-					if(nota>=0.0){
-						printf("Conceito: F");
-					}
-					else{
-						printf("Nota fora do padrao");
-					}
+					printf("Conceito: F");
 						
 				}
 			}
