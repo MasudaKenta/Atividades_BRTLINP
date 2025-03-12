@@ -13,19 +13,19 @@ int main() {
     
     printf("\nSeu imc: %.1f\nDiagnostico: ", imc);
      
-    if(imc > 40){
+    if(imc > 40.0){
     	printf("obesidade classe III\n");
 	}
 	else{
-		if(imc >= 35){
+		if(imc >= 35.0){
 			printf("obesidade classe II\n");
 		}
 		else{
-			if(imc >= 30){
+			if(imc >= 30.0){
 				printf("obesidade classe I\n");
 			}
 			else{
-				if(imc >= 25){
+				if(imc >= 25.0){
 					printf("sobrepeso\n");
 				}
 				else{
