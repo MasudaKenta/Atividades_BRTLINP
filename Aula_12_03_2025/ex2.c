@@ -8,9 +8,8 @@ int main() {
 	printf("Digite o segundo numero: ");
 	scanf("%d", &n2);
 	
-	maior = (n1>n2) ? n1 : n2;
-	
-	printf("O maior numero entre os dois eh: %d", maior);
+	printf("O maior numero eh: %d", (n1>n2) ? n1 : n2);
 	
     return 0;
 }
+
