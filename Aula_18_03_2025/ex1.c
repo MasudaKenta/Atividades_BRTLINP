@@ -10,7 +10,7 @@ int main(){
 		cont = cont + 1; 
 	}
 	
-	av = sum/(cont-1);
+	av = sum/(cont-1);	//devemos decrementar 1 de cont, pois ele está em 4
 	
 	printf("A media das notas eh: %.2f", av);
 		
