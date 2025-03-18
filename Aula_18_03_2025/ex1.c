@@ -16,3 +16,27 @@ int main(){
 		
 	return 0;
 }
+
+/* OUTRA VERSÃO
+#include <stdio.h>
+int main(){
+	int cont=1, qtd;
+	float n, sum, av;
+	
+	printf("Quantas nota serao lidas? ");
+	scanf("%d", &qtd);
+	
+	while(cont<=qtd){
+		printf("Digite a nota %d: ", cont);
+		scanf("%f", &n);
+		sum = sum + n;
+		cont = cont + 1; 
+	}
+	
+	av = sum/qtd;	
+	
+	printf("A media das notas eh: %.2f", av);
+		
+	return 0;
+}
+*/
