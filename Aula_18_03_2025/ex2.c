@@ -7,12 +7,21 @@ int main(){
 	while(n!=-5){
 		printf("Digite a nota %d: ", cont+1);
 		scanf("%f", &n);
-		sum+=n;
+		if(n!=-5)
+			sum+=n;
 		cont+=1;
 	}
-
-	av = sum/(cont-1);
 	
-	printf("Resultado da media: %.2f", av);
+	cont-=1;
+	av = sum/cont;
+	
+	if(cont==0){
+		printf("Resultado da media: %.2f", 0);
+	}
+	else{
+		printf("Resultado da media: %.2f", av);
+	}
+	
+	
 	return 0;
 }
