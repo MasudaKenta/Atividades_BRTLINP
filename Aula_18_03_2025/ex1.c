@@ -29,8 +29,8 @@ int main(){
 	while(cont<=qtd){
 		printf("Digite a nota %d: ", cont);
 		scanf("%f", &n);
-		sum = sum + n;
-		cont = cont + 1; 
+		sum += n;
+		cont += 1; 
 	}
 	
 	av = sum/qtd;	
