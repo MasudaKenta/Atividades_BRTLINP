@@ -60,16 +60,16 @@ int main(){
 	int h=0,c1=0,c2=0, cont=1;
 	
 	while(h!=-1){
-		printf("Teste %d ------------" , cont);
-		printf("Digite os lados [digite -1 para sair]: ");
+		printf("Teste %d ------------\n" , cont);
+		printf("Digite os lados [digite -1 para sair]: \n");
 		printf("Primeiro lado: ");
-		scanf("%d", h);
+		scanf("%d", &h);
 		
 		if(h!=-1){
 			printf("Segundo lado: ");
-			scanf("%d", c1);
+			scanf("%d", &c1);
 			printf("Terceiro lado: ");
-			scanf("%d", c2);
+			scanf("%d", &c2);
 			
 			//Achar a hipotenusa e armazenar em h
 			int aux;
@@ -88,11 +88,9 @@ int main(){
 				printf("Os lados formam um triangulo retangulo.\n");
 			else
 				printf("Os lados nao formam um triangulo retangulo.\n");
-			
 		}
+		cont++;
 	}
-	
-	
 	return 0;
 }
 */
