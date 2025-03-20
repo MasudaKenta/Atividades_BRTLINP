@@ -38,9 +38,9 @@ int main(){
 			c2 = sum - h - c1;
 			
 			if((h*h) == (c1*c1)+(c2*c2))
-				printf("O triangulo eh retangulo\n");
+				printf("Os lados formam um triangulo retangulo.\n");
 			else
-				printf("O triangulo nao eh retangulo\n");
+				printf("Os lados nao formam um triangulo retangulo.\n");
 			
 			h=0, c1=1000000, cont+=1;
 		}
@@ -48,3 +48,48 @@ int main(){
 	
 	return 0;
 }
+
+/* Método mais eficiente, sem tantos if/else
+
+#include <stdio.h>
+int main(){
+	
+	int h=0,c1=0,c2=0, cont=1;
+	
+	while(h!=-1){
+		printf("Teste %d ------------" , cont);
+		printf("Digite os lados [digite -1 para sair]: ");
+		printf("Primeiro lado: ");
+		scanf("%d", h);
+		
+		if(h!=-1){
+			printf("Segundo lado: ");
+			scanf("%d", c1);
+			printf("Terceiro lado: ");
+			scanf("%d", c2);
+			
+			//Achar a hipotenusa e armazenar em h
+			int aux;
+			if(c1 > h){
+				aux = h;
+				h = c1;
+				c1 = aux;
+			}
+			if(c2 > h){
+				aux = h;
+				h = c2;
+				c2 = aux;
+			}
+				
+			if((h*h) == (c1*c1)+(c2*c2))
+				printf("Os lados formam um triangulo retangulo.\n");
+			else
+				printf("Os lados nao formam um triangulo retangulo.\n");
+			
+		}
+	}
+	
+	
+	return 0;
+}
+*/
