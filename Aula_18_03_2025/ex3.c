@@ -12,9 +12,12 @@ int main(){
 		printf("Leitura dos lados: \n");
 		
 		//achar a hipotenusa e os catetos;
+		printf("Digite o primeiro lado [Digite -1 para sair]: ");
 		scanf("%d", &l1);
 		if(l1!=-1){
+			printf("Digite o segundo lado: ");
 			scanf("%d", &l2);
+			printf("Digite o terceiro lado: ");
 			scanf("%d", &l3);
 			sum = l1+l2+l3;
 
