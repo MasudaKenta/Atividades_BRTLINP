@@ -11,23 +11,26 @@ int main(void) {
   int quantidadeG = 0;
 
   while( tamanho != 'F' ) {
+  	
     switch (tamanho) {
       case 'P':
-	      quantidadeP++;
-	      break;
+	quantidadeP++;
+	break;
       case 'M': 
-	      quantidadeM++;
-	      break;
+	quantidadeM++;
+	break;
       case 'G':
-	      quantidadeG++;
-	      break;
+	quantidadeG++;
+	break;
     }
 
-    printf("Digite o tamanho recebido, F para encerrar:");
+	if(tamanho != '\n'){
+		printf("Digite o tamanho recebido, F para encerrar:");
+	}
+    
     tamanho = getchar();
   }
 
   printf("P: %d M: %d G: %d", quantidadeP, quantidadeM, quantidadeG);
   return 0;
 }
-
