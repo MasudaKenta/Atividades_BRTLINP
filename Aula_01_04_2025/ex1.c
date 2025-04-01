@@ -10,7 +10,7 @@ int main(){
 		
 		n--;
 		if(adv == 7){
-			printf("Voce ganhou!");
+			printf("Voce ganhou!\n");
 			return 0;
 		}
 		else{
