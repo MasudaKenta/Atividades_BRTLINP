@@ -1,8 +1,8 @@
 #include <stdio.h>
 int main(){
 	
-	for(int i=0;i<=1;i++){
-		printf("A: %d   !%d = %d\n", i, i, !i);
+	for(int a=0;a<=1;a++){
+		printf("A: %d   !%d = %d\n", a, a, !a);
 	}
 	
 	return 0;
