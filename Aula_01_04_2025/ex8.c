@@ -12,7 +12,7 @@ int main(){
 
 	int n, teste;
 	
-	for(int i=0;i<5;i++){
+	for(int i=0;i<2;i++){
 		printf("Digite um numero: ");
 		scanf("%d", &n);
 		
