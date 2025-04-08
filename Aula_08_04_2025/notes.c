@@ -25,8 +25,8 @@ int main(){
 visualizaçõo em pilha do código
 
 
-				  multi(b)   multi(a)
-	   operacao   operacao   operacao   operacao
+	          multi(b)   multi(a)
+       operacao   operacao   operacao   operacao
 main-> main    -> main	  -> main    -> main    -> main
 */
 
