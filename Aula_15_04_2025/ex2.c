@@ -6,8 +6,8 @@ void imprimeOla(){
 
 int main(){
 
-	for(int i=0;i<2;i++)
-		imprimeOla();
+	imprimeOla();
+	imprimeOla();
 		
 	return 0;
 }
