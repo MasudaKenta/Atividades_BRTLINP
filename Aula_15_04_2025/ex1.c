@@ -6,7 +6,11 @@ void imprimeOla(){
 
 int main(){
 
+	//ex 1.1
 	imprimeOla();
-  
+
+	//ex 1.2
+	imprimeOla();
+	imprimeOla();
 	return 0;
 }
