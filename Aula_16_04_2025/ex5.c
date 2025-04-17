@@ -9,15 +9,12 @@ int main(){
     printf("Digite um numero: ");
     scanf("%d", &b);
 
+    printf("Iguais: %s\n", (igual(a,b))?"sim":"nao");
+
     if(!igual(a,b)){
-        printf("Iguais: %s\n", (igual(a,b))?"sim":"nao");
         printf("Maior: %d\n", maior(a,b));
         printf("Menor: %d\n", menor(a,b));
     }
-    else{
-        printf("Iguais: %s\n", (igual(a,b))?"sim":"nao");
-    }
-
 
     return 0;
 }
