@@ -7,8 +7,7 @@ int main(void){
     double  r, area;
     printf("Digite o raio:");
     scanf("%lf", &r);
-    area = PI * r * r;
-    printf("Area = %f\n", area);
+    printf("Area = %f\n", PI*r*r);
 
     return 0;
 }
