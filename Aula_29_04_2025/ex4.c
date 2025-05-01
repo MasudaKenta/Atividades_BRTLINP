@@ -8,6 +8,8 @@ int main(void){
     printf("Digite uma palavra: [ate 5 letras] ");
     scanf("%5s", str);
 
+    //system("clear");
+
     for(int i=1;i<=3;i++){
         printf("Insira uma letra: ");
         scanf(" %c", &letra);
