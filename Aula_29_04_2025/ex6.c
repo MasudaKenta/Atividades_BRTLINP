@@ -3,16 +3,16 @@
 
 int main(void){
 
-    char nome[100], sobrenome[50];
+    char completo[100], sobrenome[50];
 
     printf("Digite o seu nome: ");
-    scanf("%99s", nome);
+    scanf("%99s", completo);
     printf("Digite o seu sobrenome: ");
     scanf("%49s", sobrenome);
 
-    strcat(nome, " ");
-    strcat(nome, sobrenome);
-    printf("Nome completo: %s\n", nome);
+    strcat(completo, " ");
+    strcat(completo, sobrenome);
+    printf("Nome completo: %s\n", completo);
 
     return 0;
 }
