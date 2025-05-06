@@ -11,17 +11,15 @@ int main(void){
     }
     printf("\n");
     */
-    
+
     char nome[50];
     printf("Digite seu nome: ");
     scanf("%49s", nome);
     int tam = strlen(nome);
     for(int i=0;i<tam;i++){
-        if(i==0)
-            printf("* ");
-        printf("%c * ",nome[i]);
+        printf("* %c ",nome[i]);
     }
-    printf("\n");
+    printf("*\n");
 
     return 0;
 }
