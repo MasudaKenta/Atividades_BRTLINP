@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 int main(void){
 
@@ -8,19 +9,19 @@ int main(void){
     printf("Digite uma palavra: [ate 5 letras] ");
     scanf("%5s", str);
 
-    //system("clear");
+    system("clear");
 
     for(int i=1;i<=3;i++){
         printf("Insira uma letra: ");
         scanf(" %c", &letra);
 
         if(strchr(str, letra)!=NULL){
-            printf("Letra encontrada\n");
+            printf("\"%c\" foi encontrada na palavra\n", letra);
             break;
         }
         else{
             if(i!=3){
-                printf("Letra nao encontrada. Tentativas restantes: %d\n", 3-i);
+                printf("\"%c\" nao foi encontrada na palavra. Tentativas restantes: %d\n", letra, 3-i);
             }
             else{
                 printf("Tentativas esgotadas\n");
