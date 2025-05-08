@@ -2,9 +2,9 @@
 #include <string.h>
 
 void bs(char * str){
-    char aux;
-    for(int i=0;i<strlen(str);i++){
-        for(int j=i;j<strlen(str)-1;j++){
+    int aux, tam=strlen(str);
+    for(int i=0;i<tam;i++){
+        for(int j=0;j<tam-1;j++){
             if(str[j] > str[j+1]){
                 aux = str[j];
                 str[j] = str[j+1];
@@ -23,6 +23,8 @@ int main(void){
 
     bs(str1);
     bs(str2);
+
+    printf("%s %s\n", str1,str2);
 
     if(strcmp(str1,str2)==0)
         printf("sao anagramas!\n");
