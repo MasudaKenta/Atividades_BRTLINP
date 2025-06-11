@@ -12,7 +12,7 @@ int main(void){
 
 	int ano = 2025 - atoi(filtro);
 
-    printf( "Content-type: text/html\n\n" );
+    	printf( "Content-type: text/html\n\n" );
   
 	printf("Passaram %d anos de %s para 2025\n", ano, filtro);
 
