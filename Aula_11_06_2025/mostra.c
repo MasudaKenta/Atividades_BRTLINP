@@ -2,9 +2,10 @@
 #include <stdlib.h>
 
 int main(void){
-    char *recebido = getenv("QUERY_STRING");
 
     printf( "Content-type: text/html\n\n" );
+
+    char *recebido = getenv("QUERY_STRING");
   
     printf("Recebido: %s\n", recebido);
 
