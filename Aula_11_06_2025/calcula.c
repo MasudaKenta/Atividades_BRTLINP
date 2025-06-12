@@ -4,6 +4,8 @@
 
 int main(void){
 
+	printf( "Content-type: text/html\n\n" );
+
 	char *res = getenv("QUERY_STRING");
 
 	char *filtro = strchr(res, '=');
@@ -12,8 +14,6 @@ int main(void){
 
 	int ano = 2025 - atoi(filtro);
 
-    	printf( "Content-type: text/html\n\n" );
-  
 	printf("Passaram %d anos de %s para 2025\n", ano, filtro);
 
 	return 0;
